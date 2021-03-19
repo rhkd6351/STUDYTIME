@@ -1,0 +1,101 @@
+.aside-left-content{
+    width: 843px;
+    margin-right: 12px;
+}
+.left-item:first-child,
+.left-item:nth-child(2){
+    width: 826px;
+    height: 70px;
+    line-height: 70px;
+    background-color: white;
+    text-align: left;
+    padding-left: 0px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.left-item:first-child{
+    padding-left: 20px;
+    width:806px;
+}
+
+.left-item:nth-child(2){
+    height: 350px;
+}
+.write-post>form>input[type=text]:nth-child(1){
+    width: 806px;
+    position:relative;
+    top: -10px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+    height: 40px;
+    padding: 10px;
+    background-color: #d6d6d600;
+}
+.write-post>form>textarea{
+    width: 806px;
+    position:relative;
+    top: -10px;
+    border: none;
+    height: 220px;
+    padding: 10px;
+    background-color: #d6d6d600;
+    resize: none;
+    margin-bottom: 0px;
+}
+.write-post>form>input[type=submit]{
+    width: 826px;
+    position:relative;
+    top: -45px;
+    border: none;
+    border-top: 1px solid #d6d6d6;
+    height: 40px;
+    padding: 10px;
+    background-color: #d6d6d600;
+}
+.list{
+    margin-top: 10px;
+    width: 806px;
+    position:relative;
+    border: none;
+    border: 1px solid #d6d6d6;
+    height: 80px;
+    padding: 10px;
+    background-color: #d6d6d600;
+}
+.post-list{
+    height: 85px;
+    line-height: normal;
+    
+}
+.post-list-title{
+    height: 20px;
+}
+.post-list-content{
+    height: 45px;
+    font-size: 0.9em;
+}
+.post-list-date,
+.post-list-student,
+.post-list-like{
+    color: black;
+    float: left;
+    width: 100px;
+    font-size: 0.8em;
+}
+.post-list-content{
+    line-height: 40px;
+    color: #a8a8a8;
+}
+.post-list-like{
+    float: right;
+    color: #c62917;
+    width: 10px;
+}
+.post-list-date{
+    width: 60px;
+}
+
+form{
+    width: 826px;
+    height:100px;
+}

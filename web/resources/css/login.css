@@ -1,0 +1,127 @@
+/*Initialize_1*/
+* {
+    margin: 0px; padding: 0px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+li {
+    list-style: none;
+}
+body, html, .page-wrapper, .content{
+    height: 100%; /*설정시 자식태그 높이% 지정가능*/
+  }
+
+/*intialize_2*/
+.aside-left{
+    width:calc(100% - 300px);
+}
+.aside-right{
+    position: absolute;
+    position: fixed; /* 배너고정 */
+    width: 300px; height: 100%;
+    right: 0px; top: 0px;
+    border-left: 1px solid #d6d6d6;
+    background-color: white;
+}
+
+/* left content */
+.aside-left-content{
+    height: 600px;
+}
+.aside-left-content > .title:first-child{
+    position:relative;
+    left: 100px;
+    top: 200px;
+}
+.aside-left-content:nth-child(2n-1){
+    background-color: #f5f5f5;
+}
+
+.phone{
+    position: relative;
+    width: 300px;
+    height: 540px;
+    top: 0px; left: 550px;
+    background-color: white;
+    border-radius: 40px 40px 0 0;
+    border: 2px solid #d6d6d6;
+    border-bottom: none;
+}
+
+.app{
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    background-color: #f5f5f5;
+    top: 300px;
+    border-radius: 10px;
+    border: 2px solid #d6d6d6;
+    text-align: center;
+    line-height: 70px;
+}
+.google{
+    left: 300px;
+}
+.apple{
+    left: 100px;
+}
+
+/* right content */
+.aside-right-content:first-child{
+    border-bottom: 1px solid #d6d6d6;
+}
+.login-box{
+    width: 200px;
+    position: relative;
+    padding: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+form > input{
+    width: 240px;
+    padding: 10px 20px 10px 20px;
+    margin: 0 10px 10px 10px;
+    border: 1px solid #e3e3e3;
+    background-color: #f2f2f2;
+}
+form > input[type="submit"] {
+    width: 280px;
+    background-color: white;
+    border: 1px solid #e3e3e3;
+    font-weight: bold;
+    color: #737373;
+}
+form > input[type="button"]{
+    width: 280px;
+    background-color: #c62917;
+    border: 1px solid #c62917;
+    font-weight: bold;
+    color: white;
+}
+.search-title > p {
+    font-weight: bold; font-size: 14px;
+    padding: 10px;
+    margin-left: 10px;
+}
+.search{
+    width: 240px;
+    padding: 10px 20px 10px 20px;
+    margin: 0 10px 10px 10px;
+    border: 1px solid #e3e3e3;
+    background-color: #f2f2f2;
+}
+ul > li{
+    width: 270px;
+    height: 49px;
+    padding: 0 15px;
+    line-height: 49px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 0.9em;
+}
+ul > li:first-child{
+    border-top: 1px solid #e3e3e3;
+}
+
+
