@@ -69,10 +69,12 @@
 }
 .post-list-title{
     height: 20px;
+    overflow: hidden;
 }
 .post-list-content{
     height: 45px;
     font-size: 0.9em;
+    overflow: hidden;
 }
 .post-list-date,
 .post-list-student,
@@ -81,6 +83,7 @@
     float: left;
     width: 100px;
     font-size: 0.8em;
+    overflow: hidden;
 }
 .post-list-content{
     line-height: 40px;

@@ -22,9 +22,9 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
-    public BoardVO get() {
+    public BoardVO get(int oid) {
         log.info("getting board...");
-        return mapper.read();
+        return mapper.read(oid);
     }
 
     @Override

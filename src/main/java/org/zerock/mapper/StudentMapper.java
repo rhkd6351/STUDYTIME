@@ -8,7 +8,7 @@ public interface StudentMapper {
 
     public List<StudentVO> getList();
 
-    public StudentVO read();
+    public StudentVO read(String id);
 
     public void insert(StudentVO vo);
 

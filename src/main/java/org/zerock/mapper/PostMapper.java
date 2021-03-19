@@ -12,4 +12,10 @@ public interface PostMapper {
 
     public void insert(PostVO vo);
 
+    public List<PostVO> getListAccordingToBoardOid(int boardOid);
+
+    public List<PostVO> getLeftList();
+
+    public List<PostVO> getRightList();
+
 }

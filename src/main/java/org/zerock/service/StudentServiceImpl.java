@@ -22,9 +22,9 @@ public class StudentServiceImpl implements StudentService{
     }
 
     @Override
-    public StudentVO get() {
+    public StudentVO get(String id) {
         log.info("getting Student...");
-        return mapper.read();
+        return mapper.read(id);
     }
 
     @Override

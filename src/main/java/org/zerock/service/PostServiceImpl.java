@@ -33,4 +33,22 @@ public class PostServiceImpl implements PostService{
         mapper.insert(vo);
     }
 
+    @Override
+    public List<PostVO> getListAccordingToBoardOid(int boardOid) {
+        log.info("listing Post...");
+        return mapper.getListAccordingToBoardOid(boardOid);
+    }
+
+    @Override
+    public List<PostVO> getLeftList() {
+        log.info("listing Post...");
+        return mapper.getLeftList();
+    }
+
+    @Override
+    public List<PostVO> getRightList() {
+        log.info("listing Post...");
+        return mapper.getRightList();
+    }
+
 }

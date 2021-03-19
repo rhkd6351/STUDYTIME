@@ -8,7 +8,7 @@ public interface BoardMapper {
 
     public List<BoardVO> getList();
 
-    public BoardVO read();
+    public BoardVO read(int oid);
 
     public void insert(BoardVO vo);
 

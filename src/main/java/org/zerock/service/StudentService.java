@@ -8,7 +8,7 @@ import java.util.List;
 public interface StudentService {
     public List<StudentVO> getList();
 
-    public StudentVO get();
+    public StudentVO get(String id);
 
     public void insert(StudentVO vo);
 }

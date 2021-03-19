@@ -6,6 +6,7 @@ import lombok.Data;
 public class PostVO {
     private int oid;
     private String studentId;
+    private String boardOid;
     private String title;
     private String content;
     private int up;

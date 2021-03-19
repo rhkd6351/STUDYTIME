@@ -5,12 +5,22 @@
 
 <mapper namespace="org.zerock.mapper.PostMapper">
     <select id="getList" resultType="org.zerock.domain.PostVO">
-    <![CDATA[select * from Post ]]>
+    <![CDATA[select * from Post order by oid desc]]>
+    </select>
+    <select id="getListAccordingToBoardOid" resultType="org.zerock.domain.PostVO">
+    <![CDATA[select * from Post where board_oid = #{board_oid} order by oid desc]]>
+    </select>
+
+    <select id="getLeftList" resultType="org.zerock.domain.PostVO">
+    <![CDATA[select * from post where board_oid = 1 order by oid desc]]>
+    </select>
+    <select id="getRightList" resultType="org.zerock.domain.PostVO">
+    <![CDATA[select * from post where board_oid = 2 order by oid desc]]>
     </select>
 
     <insert id="insert">
-        insert into post(oid, student_id, title, content, post_date)
-        values(post_seq.nextval, #{studentId}, #{title}, #{title}, sysdate);
+        insert into post(oid, student_id, board_oid, title, content, post_date)
+        values(post_seq.nextval, #{studentId}, #{boardOid}, #{title}, #{content}, sysdate)
     </insert>
 
     <select id="read" resultType="org.zerock.domain.PostVO">
