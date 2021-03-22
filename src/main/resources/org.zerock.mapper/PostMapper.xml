@@ -23,8 +23,20 @@
         values(post_seq.nextval, #{studentId}, #{boardOid}, #{title}, #{content}, sysdate)
     </insert>
 
+    <delete id="delete">
+        delete from post where oid = #{oid}
+    </delete>
+
     <select id="read" resultType="org.zerock.domain.PostVO">
         select * from Post where oid = #{oid}
     </select>
+
+    <update id="update">
+        update post
+        set title = #{title},
+            content = #{content},
+            update_date = sysdate
+        where oid = #{oid}
+    </update>
 
 </mapper>

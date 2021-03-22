@@ -26,7 +26,7 @@
                     <form action="/main/addPost" method="post">
                         <input type="text" name="title" placeholder="글 제목">
                         <textarea name="content" cols="30" rows="10" placeholder="내용"></textarea>
-                        <input type="hidden" value="${boardOid}" name="boardOid">
+                        <input type="hidden" value="${boardVo.oid}" name="boardOid">
                         <input type="submit" value="작성">
                     </form>
                 </div>
@@ -35,7 +35,7 @@
             <div class="left-item list">
                 <div class="post-list">
                     <div class="post-list-title">
-                        <c:out value="${post.title}"/>
+                        <a href="/main/board/post?postOid=${post.oid}"><c:out value="${post.title}"/></a>
                     </div>
                     <div class="post-list-content">
                         <c:out value="${post.content}"/>

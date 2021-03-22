@@ -10,7 +10,7 @@
 
     <insert id="insert">
         insert into board(oid, name, anony)
-        values(board_seq.nextval, #{name}, #{anony});
+        values(board_seq.nextval, #{name}, #{anony})
     </insert>
 
     <select id="read" resultType="org.zerock.domain.BoardVO">

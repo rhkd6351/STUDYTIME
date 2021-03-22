@@ -8,10 +8,18 @@
     <![CDATA[select * from Reply ]]>
     </select>
 
+    <select id="getListAccordingToPostOid" resultType="org.zerock.domain.ReplyVO">
+    <![CDATA[select * from Reply where post_oid = #{postOid} ]]>
+    </select>
+
     <insert id="insert">
-        insert into reply(oid, student_id,post_oid, content, post_date)
-        values(reply_seq.nextval, #{stidemtId}, #{postOid}, #{content}, sysdate);
+        insert into reply(oid, student_id, post_oid, content, post_date)
+        values(reply_seq.nextval, #{studentId}, #{postOid}, #{content}, sysdate)
     </insert>
+
+    <delete id="delete">
+        delete from reply where oid = #{oid}
+    </delete>
 
     <select id="read" resultType="org.zerock.domain.ReplyVO">
         select * from Reply where oid = #{oid}

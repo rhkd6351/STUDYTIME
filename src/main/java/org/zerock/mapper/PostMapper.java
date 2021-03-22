@@ -8,9 +8,13 @@ public interface PostMapper {
 
     public List<PostVO> getList();
 
-    public PostVO read();
+    public PostVO read(int oid);
 
     public void insert(PostVO vo);
+
+    public void delete(int oid);
+
+    public void update(PostVO vo);
 
     public List<PostVO> getListAccordingToBoardOid(int boardOid);
 

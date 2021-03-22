@@ -1,0 +1,110 @@
+.left-item:nth-child(2){
+    height: auto;
+    min-height: 100px;
+    padding-left: 15px;
+    width: 811px;
+}
+.post-student{
+    width: 700px;
+    height: 50px;
+    font-size: 14px;
+    float: left;
+}
+.post-delete{
+    margin-right: 20px;
+    text-align: right;
+    width: 80px;
+    height: 50px;
+    float:right;
+    font-size: 12px;
+    color:#a6a6a6;
+}
+.post-title{
+    width: 800px;
+    font-size: 20px;
+    height: 30px;
+    line-height: 20px;
+    margin: 10px 0;
+}
+.post-content{
+    height: auto;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight:400;
+}
+.post-like{
+    font-size: 12px;
+    color:#c72d1c;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.reply-box{
+    border-top: 1px solid #d6d6d6;
+    height: auto;
+    margin-left: -15px;
+}
+.reply{
+    line-height: normal;
+    height: auto;
+    font-size: 14px;
+    padding: 10px 10px;
+    font-weight: 12px;
+    border-bottom: 1px solid #d6d6d6;
+}
+.reply-student{
+    font-size: 0.8em;
+    height: 30px;
+    width:700px;
+    float:left;
+    margin-bottom: 10px;
+}
+.reply-delete{
+    margin-bottom: 10px;
+    margin-right: 20px;
+    text-align: right;
+    width: 80px;
+    height: 30px;
+    float:right;
+    font-size: 11px;
+    color:#a6a6a6;
+}
+.reply-content{
+    width: 752px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.reply-like{
+    margin-top: -35px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color:#c72d1c;
+    text-align: right;
+    margin-right: 20px;
+}
+.add-reply-box{
+    width: 806px;
+    margin-left: -10px; margin-top: -10px;
+    padding: 20px;
+    height: 20px;
+    
+}
+.add-reply-box >form> input[type=text]{
+    float: left;
+    line-height: 30px;
+    width: 750px;
+    height: 30px;
+    resize:none;
+    border: none;
+    border-right: 1px solid #d6d6d6;
+    margin-right: 20px;
+}
+.add-reply-box >form> input[type="submit"]{
+    float: left;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}

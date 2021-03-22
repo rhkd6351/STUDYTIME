@@ -22,15 +22,27 @@ public class PostServiceImpl implements PostService{
     }
 
     @Override
-    public PostVO get() {
+    public PostVO get(int oid) {
         log.info("getting Post...");
-        return mapper.read();
+        return mapper.read(oid);
     }
 
     @Override
     public void insert(PostVO vo) {
         log.info("inserting Post...");
         mapper.insert(vo);
+    }
+
+    @Override
+    public void delete(int postOid) {
+        log.info("deleting Post...");
+        mapper.delete(postOid);
+    }
+
+    @Override
+    public void update(PostVO vo) {
+        log.info("updating Post...");
+        mapper.update(vo);
     }
 
     @Override

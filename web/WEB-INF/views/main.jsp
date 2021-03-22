@@ -34,10 +34,10 @@
                     <div class="center-left-title">
                         자유게시판
                     </div>
-                    <c:forEach var="leftPost" items="${leftPostList}" varStatus="stat" begin="0" end="18">
+                    <c:forEach var="leftPost" items="${leftPostList}" varStatus="stat" begin="0" end="17">
                     <div class="center-left-post">
                         <div class="post-title">
-                            <c:out value="${leftPost.title}"/>
+                            <a href="/main/board/post?postOid=${leftPost.oid}"><c:out value="${leftPost.title}"/></a>
                         </div>
                         <div class="post-date">
                             2분 전
@@ -51,10 +51,10 @@
                     <div class="center-right-title">
                         비밀게시판
                     </div>
-                    <c:forEach var="rightPost" items="${rightPostList}" varStatus="stat" begin="0" end="18">
+                    <c:forEach var="rightPost" items="${rightPostList}" varStatus="stat" begin="0" end="17">
                         <div class="center-right-post">
                             <div class="post-title">
-                                <c:out value="${rightPost.title}"/>
+                                <a href="/main/board/post?postOid=${rightPost.oid}"><c:out value="${rightPost.title}"/></a>
                             </div>
                             <div class="post-date">
                                 방금

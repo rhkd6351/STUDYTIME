@@ -22,15 +22,27 @@ public class ReplyServiceImpl implements ReplyService{
     }
 
     @Override
-    public ReplyVO get() {
+    public ReplyVO get(int oid) {
         log.info("getting Reply...");
-        return mapper.read();
+        return mapper.read(oid);
+    }
+
+    @Override
+    public void delete(int oid) {
+        log.info("deleting Reply");
+        mapper.delete(oid);
     }
 
     @Override
     public void insert(ReplyVO vo) {
         log.info("inserting Reply...");
         mapper.insert(vo);
+    }
+
+    @Override
+    public List<ReplyVO> getListAccordingToPostOid(int postOid) {
+        log.info("listing Reply");
+        return mapper.getListAccordingToPostOid(postOid);
     }
 
 }
